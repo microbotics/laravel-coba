@@ -43,4 +43,13 @@ class mataKuliah extends Controller
 
   }
 
+  function delete($id){
+    $tampil = mataKuliahModel::where('id', $id)->delete();
+    if($tampil){
+      echo "y";
+    }else{
+      echo "t";
+    }
+  }
+
 }

@@ -22,5 +22,6 @@ Route::group(['webRoute' => ['web']], function($app){
     $app->post('/mataKuliah/insert', 'mataKuliah@insert');
     $app->get('/mataKuliah', 'mataKuliah@index');
     $app->get('/tampil/{asd}', 'mataKuliah@tampil');
+    $app->get('/delete/{asd}', 'mataKuliah@delete');
     //$app->post('/mahasiswa/update', 'homeController@update');
 });
